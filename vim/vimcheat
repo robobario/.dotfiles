@@ -1,0 +1,94 @@
+h - Cursor - move cursor left
+j - Cursor - move cursor down
+k - Cursor - move cursor up
+l - Cursor - move cursor right
+w - Cursor - jump forwards to the start of a word
+W - Cursor - jump forwards to the start of a word (words can contain punctuation)
+e - Cursor - jump forwards to the end of a word
+E - Cursor - jump forwards to the end of a word (words can contain punctuation)
+b - Cursor - jump backwards to the start of a word
+B - Cursor - jump backwards to the start of a word (words can contain punctuation)
+0 - Cursor - jump to the start of the line
+^ - Cursor - jump to the first non-blank character of the line
+$ - Cursor - jump to the end of the line
+G - Cursor - go to the last line of the document
+5G - Cursor - go to line 5
+i - Insert - insert before the cursor
+I - Insert - insert at the beginning of the line
+a - Insert - insert (append) after the cursor
+A - Insert - insert (append) at the end of the line
+o - Insert - append (open) a new line below the current line
+O - Insert - append (open) a new line above the current line
+ea - Insert - insert (append) at the end of the word
+Esc - Insert - exit insert mode
+r - Editing - replace a single character
+J - Editing - join line below to the current one
+cc - Editing - change (replace) entire line
+cw - Editing - change (replace) to the end of the word
+c$ - Editing - change (replace) to the end of the line
+s - Editing - delete character and substitute text
+S - Editing - delete line and substitute text (same as cc)
+xp - Editing - transpose two letters (delete and paste)
+u - Editing - undo
+Ctrl + r - Editing - redo
+. - Editing - repeat last command
+v - Visual - start visual mode, mark lines, then do a command (like y-yank)
+V - Visual - start linewise visual mode
+o - Visual - move to other end of marked area
+Ctrl + v - Visual - start visual block mode
+O - Visual - move to other corner of block
+aw - Visual - mark a word
+ab - Visual - a block with ()
+aB - Visual - a block with {}
+ib - Visual - inner block with ()
+iB - Visual - inner block with {}
+Esc - Visual - exit visual mode
+> - Visual - shift text right
+< - Visual - shift text left
+y - Visual - yank (copy) marked text
+d - Visual - delete marked text
+~ - Visual - switch case
+yy - Cut and Paste - yank (copy) a line
+2yy - Cut and Paste - yank (copy) 2 lines
+yw - Cut and Paste - yank (copy) word
+y$ - Cut and Paste - yank (copy) to end of line
+p - Cut and Paste - put (paste) the clipboard after cursor
+P - Cut and Paste - put (paste) before cursor
+dd - Cut and Paste - delete (cut) a line
+2dd - Cut and Paste - delete (cut) 2 lines
+dw - Cut and Paste - delete (cut) word
+D - Cut and Paste - delete (cut) to the end of the line
+d$ - Cut and Paste - delete (cut) to the end of the line
+x - Cut and Paste - delete (cut) character
+:w- Exiting - write (save) the file, but don't exit
+:wq or :x or ZZ - Exiting- write (save) and quit
+:q - Exiting- quit (fails if there are unsaved changes)
+:q! or ZQ - Exiting- quit and throw away unsaved changes
+/pattern - Search and Replace - search for pattern
+?pattern - Search and Replace- search backward for pattern
+n - Search and Replace- repeat search in same direction
+N - Search and Replace- repeat search in opposite direction
+:%s/old/new/g - Search and Replace- replace all old with new throughout file
+:%s/old/new/gc - Search and Replace- replace all old with new throughout file with confirmations
+:tabnew filename or :tabn filename - Tabs - open a file in a new tab
+Ctrl + wT - Tabs- move the current split window into its own tab
+gt or :tabnext or :tabn - Tabs- move to the next tab
+gT or :tabprev or :tabp - Tabs - move to the previous tab
+#gt - Tabs - move to tab number #
+:tabmove # - Tabs - move current tab to the #th position (indexed from 0)
+:tabclose or :tabc - Tabs - close the current tab and all its windows
+:tabonly or :tabo - Tabs - close all tabs except for the current one
+:e filename - Multi Files - edit a file in a new buffer
+:bnext or :bn - Multi Files - go to the next buffer
+:bprev or :bp - Multi Files - go to the previous buffer
+:bd - Multi Files - delete a buffer (close a file)
+:sp filename - Multi Files - open a file in a new buffer and split window
+:vsp filename - Multi Files - open a file in a new buffer and vertically split window
+Ctrl + ws - Multi Files - split window
+Ctrl + ww - Multi Files - switch windows
+Ctrl + wq - Multi Files - quit a window
+Ctrl + wv - Multi Files - split window vertically
+Ctrl + wh - Multi Files - move cursor to the left window (vertical split)
+Ctrl + wl - Multi Files - move cursor to the right window (vertical split)
+Ctrl + wj - Multi Files - move cursor to the window below (horizontal split)
+Ctrl + wk - Multi Files - move cursor to the window above (horizontal split)
