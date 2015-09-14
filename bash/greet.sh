@@ -1,1 +1,3 @@
-~/.dotfiles/bash/greet.py
+#!python
+
+python ~/.dotfiles/bash/greet.py

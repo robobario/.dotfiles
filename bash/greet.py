@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 from termcolor import colored, cprint
 
 cprint('    _','yellow')
