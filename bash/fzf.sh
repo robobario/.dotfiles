@@ -50,3 +50,5 @@ b() {
   fi
 }
 export -f b > /dev/null
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
